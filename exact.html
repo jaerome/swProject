@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./exact.css" />
+  <title>오늘 뭐 먹지?</title>
+</head>
+
+<body>
+    <img src="C:\Users\dlehd\Desktop\나무발발이\52.PNG" width="150px" height="200px" id="logo" onclick="logoClicked()">
+    <li>
+    </li>
+
+    <img src="" width="300px" height="400px" id="mainMenuPicture" >
+
+    <select name='mainMenu' size='6' id = "mainMenuList">
+        <option value='' selected>-- 선택 --</option>
+        <option value='DBI'>떡볶이</option>
+        <option value='EFR'>계란볶음밥</option>
+        <option value='FTS'>유부초밥</option>
+        <option value='JYB'>제육볶음</option>
+    </select>
+    <button id = "mainMenu" onclick="mainMenuClicked()">주 메뉴 선택</button>
+    <script src="exact.js"></script>
+    <li> 
+    </li>
+    <img src="C:\Users\dlehd\Desktop\나무발발이\doc1.jpg" width="300px" height="400px" id="subMenuPicture">
+    <select name='submenu' size='6' id = "subMenuList">
+        <option value='' selected>-- 선택 --</option>
+        <option value='FFS'>어묵볶음</option>
+        <option value='LGI'>부추겉절이</option>
+        <option value='SAS'>잔멸치볶음</option>
+        <option value='SBS'>콩나물무침</option>
+    </select>
+    <button id = "subMenu" onclick="subMenuClicked()">부 메뉴 선택</button>
+    <script src="globalvalue.js"></script>
+    <script src="exact.js"></script>
+    <script>
+        window.onload=function(){
+            //alert(menu);
+            var mainimg=document.getElementById("mainMenuPicture");
+            mainimg.src="./food/main/"+menu+".jpg";
+        }
+    </script>
+</body>

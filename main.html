@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <title>오늘 뭐 먹지?</title>
+</head>
+<body>
+  
+  <li>
+  </li>
+  <div class="wrap">
+    <div>
+      <img src="./food/logo.jpg" width="" height="200px"id="logo" onclick="logoClicked()">
+    </div>
+    
+    <!-- 첫 번째 슬라이드 라디오 버튼 그룹 -->
+    <input type="radio" class="radio_button1" id="radio_1" name="slider1" checked />
+    <input type="radio" class="radio_button1" id="radio_2" name="slider1" />
+    <input type="radio" class="radio_button1" id="radio_3" name="slider1" />
+    <input type="radio" class="radio_button1" id="radio_4" name="slider1" />
+
+    <!-- 첫 번째 슬라이드 -->
+    <ul class="slide1" id = "mainMenu">
+      <li class="slide_item1" value="DBI" onclick="mainMenuClicked('DBI')">
+        <img src="./food/main/F_DBI.jpg">
+      </li>
+      <li class="slide_item1" value="EFR" onclick="mainMenuClicked('EFR')">
+        <img src="./food/main/F_EFR.jpg">
+      </li>
+      <li class="slide_item1" value="FTS" onclick="mainMenuClicked('FTS')">
+        <img src="./food/main/F_FTS.jpg">
+      </li>
+      <li class="slide_item1" value="JYB" onclick="mainMenuClicked('JYB')">
+        <img src="./food/main/F_JYB.jpg">
+      </li>
+    </ul>
+
+    <!-- 두 번째 슬라이드 라디오 버튼 그룹 -->
+    <input type="radio" class="radio_button2" id="radio_5" name="slider2" checked/>
+    <input type="radio" class="radio_button2" id="radio_6" name="slider2" />
+    <input type="radio" class="radio_button2" id="radio_7" name="slider2" />
+    <input type="radio" class="radio_button2" id="radio_8" name="slider2" />
+
+    <!-- 두 번째 슬라이드 -->
+    <ul class="slide2">
+      <li class="slide_item2" value="SWS" onclick="subMenuClicked('FFS')">
+        <img src="./food/sub/F_FFS.jpg">
+      </li>
+      <li class="slide_item2" value="FFS" onclick="subMenuClicked('LGI')">
+        <img src="./food/sub/F_LGI.jpg">
+      </li>
+      <li class="slide_item2" value="LGI" onclick="subMenuClicked('LGI')">
+        <img src="./food/sub/F_FFS.jpg">
+      </li>
+      <li class="slide_item2" value="SAS" onclick="subMenuClicked('SAS')">
+        <img src="./food/sub/F_LGI.jpg">
+      </li>
+    </ul>
+    <!-- 두 번째 슬라이드 끝 -->
+
+    <div class="bullet_area">
+      <!-- 첫 번째 슬라이드 라디오 버튼 -->
+      <label class="slide_button1" for="radio_1"></label>
+      <label class="slide_button1" for="radio_2"></label>
+      <label class="slide_button1" for="radio_3"></label>
+      <label class="slide_button1" for="radio_4"></label>
+      
+      <!-- 두 번째 슬라이드 라디오 버튼 -->
+      <label class="slide_button2" for="radio_5"></label>
+      <label class="slide_button2" for="radio_6"></label>
+      <label class="slide_button2" for="radio_7"></label>
+      <label class="slide_button2" for="radio_8"></label>
+    </div>
+  </div>
+  <script src="globalvalue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

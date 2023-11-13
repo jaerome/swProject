@@ -1,0 +1,145 @@
+body{
+  clear:both;display:block;overflow:hidden;width:100%;max-width:640px;margin:0 auto;
+}
+.wrap {
+    position: relative;
+    justify-content: center;
+    width: 600px;
+    text-align: center;
+  }
+
+
+
+  .radio_area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .slide1 {
+    display: flex;
+    overflow: hidden;
+    justify-items: center;
+    list-style: none;
+    padding: 0;
+    white-space: nowrap;
+  }
+  
+  .slide_item1 {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 400px;
+    height: 300px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+  }
+
+  .slide2 {
+    display: flex;
+    overflow: hidden;
+    justify-items: center;
+    list-style: none;
+    padding: 0;
+    white-space: nowrap;
+  }
+  
+  .slide_item2 {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 400px;
+    height: 300px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+  }
+  
+  
+  .radio_button1{
+    margin: 0;
+  }
+  
+  .radio_button:nth-child(1):checked ~ .slide .slide_item {
+    transform: translateX(0%);
+  }
+  
+  .radio_button:nth-child(2):checked ~ .slide .slide_item {
+    transform: translateX(-100%);
+  }
+  
+  .radio_button:nth-child(3):checked ~ .slide .slide_item {
+    transform: translateX(-200%);
+  }
+  
+  .radio_button:nth-child(4):checked ~ .slide .slide_item {
+    transform: translateX(-300%);
+  }
+  
+  /* 두 번째 슬라이드 라디오 버튼 */
+  .radio_button2 {
+    margin: 0;
+  }
+  
+  .radio_button2:nth-child(1):checked ~ .slide2 .slide_item2 {
+    transform: translateX(0%);
+  }
+  
+  .radio_button2:nth-child(2):checked ~ .slide2 .slide_item2 {
+    transform: translateX(-100%);
+  }
+  
+  .radio_button2:nth-child(3):checked ~ .slide2 .slide_item2 {
+    transform: translateX(-200%);
+  }
+  
+  .radio_button2:nth-child(4):checked ~ .slide2 .slide_item2 {
+    transform: translateX(-300%);
+  }
+
+/*슬라이드 테스트*/
+.slide {
+  display:block;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slide-inner {
+  width: 1800px;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.slide-inner a img{
+  width:600px;
+}
+
+input[id=tab1]:checked ~ .slide .slide-inner {
+  left: 0;
+}
+input[id=tab2]:checked ~ .slide .slide-inner {
+  left: -600px;
+}
+input[id=tab3]:checked ~ .slide .slide-inner {
+  left: -1200px;
+}
